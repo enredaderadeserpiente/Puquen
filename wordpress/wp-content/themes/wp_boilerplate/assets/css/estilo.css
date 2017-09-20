@@ -1,0 +1,147 @@
+body {
+  background: red;
+}
+
+.logo {
+  width: 50px;
+  height: 10%;
+}
+
+.barra_navegacion{
+  background-color: #F1BF98;
+}
+.barra_navegacion ul{
+  margin-top: 25px;
+}
+
+.barra_navegacion li{
+  margin-bottom: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+.barra_navegacion ul li a {
+  padding: 0;
+  color: #F1F0CC;
+  text-transform: uppercase;
+  font-family: 'Kanit', sans-serif;
+  font-size: 16px;
+
+}
+.barra_navegacion ul li a:hover {
+  background-color: transparent;
+  border: none;
+
+}
+
+.navbar-toggle {
+  border: 1px solid #F1F0CC;
+}
+
+.navbar-toggle .icon-bar{
+  background-color: #F1F0CC;
+}
+.item {
+    background-color: rgb(173, 185, 147);
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.item img {
+    content: "";
+
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+    margin: -200px 0 0 0;
+
+}
+.carousel-caption{
+  /*transform: translate(0, -200px);*/
+
+  z-index: 1;
+
+
+
+}
+.carousel-caption h3{
+
+  color: #FBFFB9;
+  font-family: 'Maven Pro', sans-serif;
+
+}
+
+.carousel-caption p{
+
+  color: #F1F0CC;
+  font-family: 'Maven Pro', sans-serif;
+
+}
+
+#mapid {
+  height: 400px;
+}
+
+
+.espaciador{
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.texto_mapa h2 {
+  text-align: center;
+  color: #ADB993;
+  font-family: 'Kanit', sans-serif;
+
+
+}
+.seccion_horarios{
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+.horarios h2 {
+  text-align: center;
+  /*color: #F2A971;*/
+  /*color: #FAFF9E;*/
+  /*color: #EC7357;*/
+  color: #ED8E78;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
+}
+.horarios h3 {
+  text-align: center;
+  /*color: #FBFFB9;*/
+  color: #ED8E78;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 300;
+}
+
+.icono img {
+
+}
+
+#map {
+     height: 100%;
+   }
+@media (max-width: 320px) {
+  .item img{
+    margin: 0 0 0 0;
+
+
+  }
+  .item {
+
+      height: 400px;
+
+  }
+
+}
+
+@media (min-width: 768px) {
+  .barra_navegacion{
+    padding: 10px 0;
+  }
+}
