@@ -15,12 +15,16 @@
 		wp_register_script('mainJS', get_parent_theme_file_uri('/assets/js/functions.js'), array('jQuery_migrate'), $theme_data->get( 'Version' ), true);
 		wp_register_script('bootstrapJS','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array("jquery"), "3.2.1", true);
 		wp_register_script('jquery','https://code.jquery.com/jquery-3.2.1.min.js', null, null , null);
+		wp_register_script('openweather', get_parent_theme_file_uri('/assets/js/openweather.js'), null, null, true);
+		wp_register_script('ruta_scroll', get_parent_theme_file_uri('/assets/js/ruta_scroll.js'), null, null, true);
 
 		/* Enqueue Scripts */
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('flexslider');
 		wp_enqueue_script('mainJS');
 		wp_enqueue_script('bootstrapJS');
+		wp_enqueue_script('openweather');
+		wp_enqueue_script('ruta_scroll');
 
 	}
 

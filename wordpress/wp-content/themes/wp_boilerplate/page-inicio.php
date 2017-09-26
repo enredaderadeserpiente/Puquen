@@ -60,6 +60,7 @@
         	}
          ?>
       </div>
+
       <!-- Wrapper for slides -->
 
 
@@ -73,6 +74,7 @@
         <span class="sr-only">Next</span>
       </a>
   </div>
+</section>
 <section class="texto_mapa">
   <style>
   .texto_mapa {
@@ -82,15 +84,15 @@
   </style>
   <div class="container">
     <div class="espaciador">
-      <b>
+
       <h2> " El Bioparque posee una extensión de 200 hectáreas, insertado dentro de una extensión de terreno declarado Sitio Prioritario de Biodiversidad .</h2>
       <h2>  Conoce sus particulares riquezas biológicas y su increíble biodiversidad.</h2>
       <h2> En este fascinante recorrido puedes conocer variados atractivos naturales: flora y fauna, piscinas naturales y la espectacular vista del parque en toda su magnitud. "</h2>
-      </b>
+
     </div>
   </div>
 </section>
-</section>
+
 <section class= "mapa_terreno">
    <div id="mapid"></div>
    <script>
@@ -119,7 +121,7 @@
 
 
    </script>
-<section>
+</section>
 
 <section class="seccion_horarios">
   <style>
@@ -137,36 +139,16 @@
         <h3>Niños $ 600  Adultos $ 1.200 </h3>
       </div>
       <div class="col-md-6 horarios" >
-        <script>
-        $( document ).ready(function() {
-           $.ajax({
-           url: "http://api.openweathermap.org/data/2.5/weather?lat=-32.23560061305293&lon=-71.52052402496338&appid=9911d6ea12cd4363a30d8f43e61e41c2&units=metric&lang=es",
-           method: 'GET'
-
-           }).then(function(data) {
-              var id_icono = data.weather[0].icon;
-              var princ = "http://openweathermap.org/img/w/";
-              var final = ".png"
-              var temperatura = Math.round(data.main.temp);
-              $(".temperatura").text(temperatura);
-              $(".descripcion").text(data.weather[0].description);
-              $(".humedad").text(data.main.humidity);
-              $(".viento").text(data.wind.speed);
-              $(".icono").html('<img src="' + princ + id_icono + final + '">');;
-
-           });
-        });
-        </script>
         <h2>Temperatura: <span class = "temperatura"></span> ºC</h2>
         <h3>Descripción: <span class = "descripcion"></span>  <span class="icono"></span></h3>
         <h3>Humedad: <span class = "humedad"></span> %</h3>
         <h3>Viento: <span class = "viento"></span> m/s</h3>
 
       </div>
-    <div>
+    </div>
   </div>
 </section>
-
+<!-- <section class="mapa_google">
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -180,37 +162,41 @@
         padding: 0;
       }
     </style>
+    <style>
+     #map {
+       height: 400px;
+     }
 
+   </style>
     <div id="map"></div>
     <script>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
+          center: {lat: -32.23897649261799, lng: -71.5174663066864},
+          zoom: 16
         });
+        var marker = new google.maps.Marker({
+          position: {lat: -32.23897649261799, lng: -71.5174663066864},
+          map: map,
+          title: 'Entrada'
+        });
+
+        marker.setMap(map);
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsqwMIrwxGmYq82g_OJtjXuXC0aAXDwHU&callback=initMap"
     async defer></script>
+  </section> -->
 
-  <section class="blog container">
-    <div class="row">
-      <?php
-      $args = array(
-        "posts_per_page" => 6
-      );
-      $entradas = new WP_Query($args); while ($entradas->have_posts()): $entradas->the_post();
-      ?>
-        <div class="col-xs-6 col-md-4 entrada">
-          <?php the_post_thumbnail( "entradas", array('class' => "img-responsive" ) );?>
-          
-        </div>
-      <?php
-      endwhile; wp_reset_postdata();
-      ?>
-    </div>
-  </section>
+
+  <div class="embed-container maps">
+    <iframe width='100%' height='400' frameborder='0' src='https://www.google.com/maps/d/embed?mid=1GRZpj541lQ087_84RCDf1d3J3J0'></iframe>
+  </div>
+
+
+
+
 
 
 <?php get_footer() ?>

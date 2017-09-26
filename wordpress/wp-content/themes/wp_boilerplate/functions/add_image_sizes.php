@@ -15,6 +15,7 @@
 		add_image_size( 'slideshow', 1024, 600, true);		// Personalización del tamaño del slideshow
 		add_image_size( 'custom_logo', 800, 600, true);
 		add_image_size( 'imagen_banner', 1024,300, true);
+		add_image_size( "entrada", 750, 490, true);
 
 
 
