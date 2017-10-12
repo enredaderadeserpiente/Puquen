@@ -203,9 +203,9 @@
     <div class="row">
       <div class="col-md-6 col-sm-12 col-xs-12 horarios abierto_horarios">
         <h2>Abierto: </h2>
-        <h3>Lunes a Domingo de 9:30 a 19:00</h3>
+        <h3><?php the_field('horarios'); ?></h3>
         <h2>Valor entrada:</h2>
-        <h3>Niños $ 600  Adultos $ 1.200 </h3>
+        <h3><?php the_field('valores'); ?> </h3>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12 horarios temperatura_horarios" >
         <h2>Temperatura: <span class = "temperatura"></span> ºC</h2>
