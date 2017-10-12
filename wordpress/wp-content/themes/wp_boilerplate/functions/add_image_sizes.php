@@ -16,6 +16,7 @@
 		add_image_size( 'custom_logo', 800, 600, true);
 		add_image_size( 'imagen_banner', 1024,300, true);
 		add_image_size( "entrada", 750, 490, true);
+		add_image_size( "banner_chico", 400, 400, true);
 
 
 

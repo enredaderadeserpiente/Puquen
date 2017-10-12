@@ -1,0 +1,79 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 2017-10-08 22:40:23
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.2.26
+WORDPRESS:	4.8.2
+PHP INFO:	7.1.6 | SAPI: apache2handler
+SERVER:		Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.6 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 2048M (128M default) 
+MEMORY STACK: 4MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported 
+TABLES: total:17 | filtered:0 | create:17 
+FILTERED: [] 
+SQL CREATED: 20171008_bioparquelosmolles_5eeee0bfb740fc297363171008223937_database.sql 
+SQL FILE SIZE: 588.82KB (602954) 
+SQL FILE TIME: 2017-10-08 22:40:23 
+SQL RUNTIME: 0.14 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /Users/Apple/Desktop/Puquen_sitio/wordpress 
+ARCHIVE FILE: 20171008_bioparquelosmolles_5eeee0bfb740fc297363171008223937_archive.zip 
+FILTERS: *OFF* 
+DIRS:
+	not set 
+FILES:
+	not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	123.04MB 
+STATS:	Dirs 485 | Files 3,238 
+SQL ADDED: 20171008_bioparquelosmolles_5eeee0bfb740fc297363171008223937_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 3723
+    [filename] => /Users/Apple/Desktop/Puquen_sitio/wordpress/wp-snapshots/tmp/20171008_bioparquelosmolles_5eeee0bfb740fc297363171008223937_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 89.6MB 
+ARCHIVE RUNTIME: 31.33 sec. 
+MEMORY STACK: 6MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+PACK SIZE:  
+Template parsed with new data 
+Complete [/Users/Apple/Desktop/Puquen_sitio/wordpress/wp-snapshots/tmp/20171008_bioparquelosmolles_5eeee0bfb740fc297363171008223937_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 588.82KB 
+Installer File: 438.33KB 
+Archive File: 89.6MB  
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 39.77 sec.
+PEAK PHP MEMORY USED: 8MB
+DONE PROCESSING => 20171008_bioparquelosmolles 2017-10-08 22:41:02
+ 
